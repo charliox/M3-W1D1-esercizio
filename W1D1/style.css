@@ -1,0 +1,40 @@
+/*ESERCIZIO 1*/
+.jumbotron h1
+
+/*ESERCIZIO 2*/
+nav.nav > *
+
+/*ESERCIZIO 3*/
+.jumbotron a.font-weight-bold
+
+/*ESERCIZIO 4*/
+.blog-post:first-of-type
+
+/*ESERCIZIO 5*/
+.blog-post:first-of-type hr {
+    border-color: red
+}
+
+/*ESERCIZIO 6*/
+nav.nav span: nth-child (even)
+
+/*ESERCIZIO 7*/
+.blog-sidebar .list-unstyled:first-of-type li
+
+/*ESERCIZIO 8*/
+.blog-post:nth-child(2) .blog-post-meta a
+
+/*ESERCIZIO 9*/
+.blog-post:nth-of-type(3) ul li:nth-child(2)
+
+/*ESERCIZIO 10*/
+a.float-right
+
+/*ESERCIZIO 11*/ /*non chiaro a.disables*/
+.blog-pagination a.disables
+
+/*ESERCIZIO 12*/
+.blog-footer a:nth-of-type(2)
+
+
+
