@@ -6,35 +6,54 @@ nav.nav > *
 
 /*ESERCIZIO 3*/
 .jumbotron a.font-weight-bold
+//oppure 
+.jumbotron p a {
+    color-type: red;
+}
 
 /*ESERCIZIO 4*/
-.blog-post:first-of-type
+.blog-main .blog-post:first-of-type
+oppure
+.blog-main .blog-post:nth-of-type(1)
+/*utile per gli annunci pubblicitari*/
 
 /*ESERCIZIO 5*/
-.blog-post:first-of-type hr {
-    border-color: red
+.blog-main .blog-post:nth-of-type(1) {
+    background-color: aquamarine;
 }
 
 /*ESERCIZIO 6*/
-nav.nav span: nth-child (even)
+nav >*:nth-child(even)
 
 /*ESERCIZIO 7*/
-.blog-sidebar .list-unstyled:first-of-type li
+aside ol:nth-of-type li {
+    background-color: green;
+    margin: 1px;
+}
 
 /*ESERCIZIO 8*/
-.blog-post:nth-child(2) .blog-post-meta a
+.blog-main .blog-post:nth-of-type(2) .blog-post-meta a {
+    background-color: red;
+    font-weight: 800;
+}
 
 /*ESERCIZIO 9*/
-.blog-post:nth-of-type(3) ul li:nth-child(2)
+.blog-main .blog-post:nth-of-type(3) ul li:nth-of-type(2) {
+    color: red;
+}
 
 /*ESERCIZIO 10*/
-a.float-right
+a[href="#"].float.right {
+    color: greenyellow;
+    background-color: black;
+}
 
-/*ESERCIZIO 11*/ /*non chiaro a.disables*/
-.blog-pagination a.disables
+/*ESERCIZIO 11*/ /*disabled è una classe bootstrap*/
+.blog-pagination a:last-child {
+    background-color: aqua;
+}
 
 /*ESERCIZIO 12*/
-.blog-footer a:nth-of-type(2)
-
-
-
+footer a:last-child {
+    color:cadetblue;
+}
