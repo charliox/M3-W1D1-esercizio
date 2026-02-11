@@ -1,24 +1,29 @@
 /*ESERCIZI EXTRA*/
-/*EXTRA 1: RIMUOVERE TWITTER AUTOMATICAMENTE*/
-window.addEventListener("DOMContentLoaded",) function() {
-    const twitterLink = document.querySelector(".blog-sidebar a[href*='twitter']");
-    if (twitterLink) {
-        twitterLink.parentElement.remove();
-    }
-}
+/*EXTRA 1: RIMUOVERE TWITTER*/
+let asidelinks = document.querySelectorAll("aside a")
+asidelinks.forEach(link => {
+    if (link.textContent === "Twitter")
+        link.parentElement.remove()
+})
+})
+
+//OPPURE window.onload = function(), quasi uguale ma leggermente meno formale
 
 
 /*EXTRA 2: RIMUOVERE POST CLICCANDO SU "CONTINUA A LEGGERE"*/
-document.querySelectorAll(".stretched-link").forEach(link => {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        this.closest(".blog-post").remove();
-    });
+let continueRead = document.querySelectorAll(".stretched-link")
+for (let link of continueRead) {
+    console.log("ok")
+    link.onClick = function(event) {
+    event.preventDefault()
+    event.closest(".col-md-6").remove();
+}
 })
 
 /*EXTRA 3: ALERT AUTORE ON HOVER*/
-document.querySelectorAll(".blog-post-meta a").forEach(author => {
-    author.addEventListener("mouseenter", function() {
-        alert(this.textContent);
-    });
-});
+let author = document.querySelectorAll(".blog-post-meta a")
+for (let authorLink of author) {
+    authorLink.addEventListener("mouseover", function(event){alert(event.target.innerText)        
+    })
+}
+})
